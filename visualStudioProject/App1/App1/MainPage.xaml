@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App1.MainPage">
+
+    <StackLayout
+        Padding="30"
+        Spacing="30"
+        BackgroundColor="#00416B">
+
+        <Image
+            Source="logo.png"/>
+
+        <Entry
+            x:Name="EnCep"
+            Placeholder="Digite o CEP"
+            TextColor="#FFFFFF"
+            PlaceholderColor="#FFFFFF"
+            BackgroundColor="Transparent"
+            Keyboard="Numeric"
+            MaxLength="8"/>
+
+        <Button
+            x:Name="BtGo"
+            Text="Buscar"
+            TextColor="#FFFFFF"
+            BackgroundColor="#FFBF00"/>
+
+        <Label
+           x:Name="LbResponse"
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" 
+           TextColor="#FFFFFF"/>
+    </StackLayout>
+
+</ContentPage>
